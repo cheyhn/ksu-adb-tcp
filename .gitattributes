@@ -1,0 +1,2 @@
+# 统一使用 LF 换行，避免脚本在 Android 上出问题
+* text=auto eol=lf
