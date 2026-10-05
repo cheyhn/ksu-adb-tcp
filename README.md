@@ -59,3 +59,12 @@ zip adb_tcp_5555.zip module.prop service.sh action.sh README.md
 
 - `service.adb.tcp.port` 是运行时属性，重启会丢失，所以由 `service.sh` 每次开机重新设置；
 - adbd 是 init 管理的原生系统服务，不会被 LMK、电池优化等杀掉；若被误操作关闭，点【操作】按钮或重启即可恢复。
+
+## 应用内更新
+
+`module.prop` 已配置 `updateJson`，KernelSU 管理器可直接检测新版本。发布新版本时需要同步修改两处：
+
+- `module.prop`：`version` 和 `versionCode`
+- `update.json`：`version`、`versionCode`、`zipUrl`（指向新 Release 的 zip 直链）和 `changelog`
+
+然后用新版本重新打包 zip、打 tag 发 Release 即可。

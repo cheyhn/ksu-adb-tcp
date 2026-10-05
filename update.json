@@ -1,0 +1,6 @@
+{
+  "version": "1.2.0",
+  "versionCode": 3,
+  "zipUrl": "https://github.com/cheyhn/ksu-adb-tcp/releases/download/v1.2.0/adb_tcp_5555.zip",
+  "changelog": "开机自动开启 ADB TCP 5555（纯 service.sh 实现，不写入外部目录，卸载无残留）；支持管理器【操作】按钮立即生效。"
+}
