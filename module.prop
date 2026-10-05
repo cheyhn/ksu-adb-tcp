@@ -1,0 +1,6 @@
+id=adb_tcp_5555
+name=ADB TCP 5555
+version=1.2.0
+versionCode=3
+author=mk
+description=开机自动开启 ADB TCP 5555 端口（模块自带 service.sh，不写入任何外部目录）；卸载即自动移除，无残留。
